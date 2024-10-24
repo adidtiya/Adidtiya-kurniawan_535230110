@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lifestyle Vibes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(135deg, #e0eafc, #cfdef3);
+        min-height: 100vh;
+      }
+
+      nav {
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(5px);
+      }
+
+      h2,
+      h3 {
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+      }
+
+      .carousel-item img {
+        height: 400px;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+
+      footer {
+        background-color: #0f4c75;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      .card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      .card:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+      }
+
+      .card img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      a {
+        text-decoration: none;
+        color: #00adb5;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#" style="font-size: 2rem; color: #00adb5; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+          <span style="background: linear-gradient(to right, #00adb5, #393e46); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+            Lifestyle Vibes
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item">
+              <a class="btn btn-outline-info ms-2" href="subscribe.html">Subscribe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>    
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="fw-bold">Welcome to the Lifestyle Hub</h2>
+          <h3 class="text-muted">Explore trends, wellness, and live your best life</h3>
+          <p class="lead">
+            Lifestyle is all about finding balance, embracing health, and living in the moment. Whether you're into fitness, mindfulness, or just looking to elevate your routines, you've come to the right place.
+          </p>
+        </div>
+
+        <!-- First Carousel -->
+        <div class="col-md-6">
+          <div id="carouselFirst" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1932&auto=format&fit=crop"
+                  class="d-block w-100" alt="First Slide" />
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop"
+                  class="d-block w-100" alt="Second Slide" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Second Carousel Section -->
+        <div class="my-5">
+          <div id="carouselSecond" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=1856&auto=format&fit=crop"
+                  class="d-block w-100" alt="Peaceful Moment" />
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?q=80&w=1887&auto=format&fit=crop"
+                  class="d-block w-100" alt="Yoga Practice" />
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1477332552946-cfb384aeaf1c?q=80&w=2070&auto=format&fit=crop"
+                  class="d-block w-100" alt="Fitness Lifestyle" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Wellness & Fashion Section -->
+      <div class="my-5">
+        <h3 class="fw-bold">Latest in Wellness</h3>
+        <p>
+          Discover the latest trends in wellness, from meditation techniques to fitness tips that keep you grounded and healthy.
+        </p>
+        <h3 class="fw-bold">Explore Fashion & Trends</h3>
+        <p>
+          Stay ahead in fashion with insights into trending styles, sustainable fashion, and more.
+        </p>
+
+        <!-- Cards Section -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1715418554358-d34e420b18ab?q=80&w=1920&auto=format&fit=crop"
+                class="card-img-top"
+                alt="Man in suit"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  A man in a suit standing on a sidewalk. This dude wears a slick suit, rocking a pair of black eyeglasses like he owns the street. He's just chilling there, striking a pose like he's about to drop the hottest album of the year.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1887&auto=format&fit=crop"
+                class="card-img-top"
+                alt="Woman near pigeons"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Woman near pigeons. This shot was taken at the Duomo in Milan, Italy, during fashion week 2018.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1508592931388-95bc7b61033d?q=80&w=2070&auto=format&fit=crop"
+                class="card-img-top"
+                alt="Norwegian autumn"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Body of water surrounded by mountain peaks. Hiking in Norwegian autumn.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <small>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a> •
+        <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms & Conditions</a>
+      </small>
+    </footer>
+    <!-- Privacy Policy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1>Privacy Policy</h1>
+            <p>Effective Date: October 24, 2024</p>
+            <h3>1. Information We Collect</h3>
+            <p>We collect the following information:</p>
+            <ul>
+              <li>Personal information such as name, email address, and phone number.</li>
+              <li>Use information such as IP address, browser type, and pages visited.</li>
+            </ul>
+            <h3>2. Use of Information</h3>
+            <p>The information we collect is used to:</p>
+            <ul>
+              <li>Process requests and services requested by users.</li>
+              <li>Improve user experience on our site.</li>
+              <li>Send information and updates regarding our services.</li>
+            </ul>
+            <h3>3. Information Protection</h3>
+            <p>We take appropriate measures to protect users' personal information from unauthorized access, use, or disclosure.</p>
+            <h3>4. Disclosure to Third Parties</h3>
+            <p>We do not sell, trade, or otherwise transfer users' personal information to third parties without users' consent,
+              except where required by law.</p>
+            <h3>5. Cookies</h3>
+            <p>We use cookies to improve user experience. Users may choose to disable cookies through their browser settings.</p>
+            <h3>6. User Rights</h3>
+            <p>Users have the right to:</p>
+            <ul>
+              <li>Access their personal information held by us.</li>
+              <li>Request correction of inaccurate information.</li>
+              <li>Request deletion of their personal information.</li>
+            </ul>
+            <h3>7. Changes to Privacy Policy</h3>
+            <p>We reserve the right to change this privacy policy at any time. Changes will be announced on this page with an
+              updated date.</p>
+              <h3>8. Contact</h3>
+              <p>If you have any questions about this privacy policy, please contact us at:</p>
+              <p>Email: support@example.com</p>
+              <p>Phone: (123) 456-7890</p>
+              <footer>
+                <p>&copy;2024 Company Name. All Rights Reserved.</p>
+              </footer>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terms & Conditions Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="termsModalLabel">Terms & Conditions</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h1>Terms & Conditions</h1>
+            <h3>1. Acceptance of Terms</h3>
+            <p>By accessing and using our website, you agree to comply with and be bound by these terms.</p>
+            <h3>2. Changes to Terms</h3>
+            <p>We reserve the right to modify these terms at any time without prior notice.</p>
+            <h3>3. User Conduct</h3>
+            <p>You agree to use the website only for lawful purposes and in a manner that does not infringe the rights of others.</p>
+            <h3>4. Limitation of Liability</h3>
+            <p>We are not liable for any damages arising from your use of the website.</p>
+            <h3>5. Governing Law</h3>
+            <p>These terms are governed by the laws of [Your Country].</p>
+            <footer>
+              <p>&copy;2024 Company Name. All Rights Reserved.</p>
+            </footer>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
