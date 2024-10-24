@@ -139,41 +139,41 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="paymentModalLabel">Form Pembayaran</h5>
+                <h5 class="modal-title" id="paymentModalLabel">Payment Form</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form id="paymentForm">
                     <div class="mb-3">
-                        <label for="fullName" class="form-label">Nama Lengkap</label>
+                        <label for="fullName" class="form-label">Full Name</label>
                         <input type="text" class="form-control" id="fullName" required>
                     </div>
                     <div class="mb-3">
-                        <label for="paymentMethod" class="form-label">Metode Pembayaran</label>
+                        <label for="paymentMethod" class="form-label">Payment Methods</label>
                         <select class="form-select" id="paymentMethod" required>
-                            <option value="">Pilih metode pembayaran</option>
+                            <option value="">Select payment method</option>
                             <option value="debit">Debit</option>
-                            <option value="kredit">Kredit</option>
+                            <option value="kredit">Credit</option>
                             <option value="dana">Dana</option>
                         </select>
                     </div>
                     <div class="mb-3" id="cardNumberContainer" style="display:none;">
-                        <label for="cardNumber" class="form-label">Nomor Kartu</label>
+                        <label for="cardNumber" class="form-label">Card Number</label>
                         <input type="text" class="form-control" id="cardNumber" placeholder="Masukkan nomor kartu">
                     </div>
                     <div class="mb-3" id="phoneNumberContainer" style="display:none;">
-                        <label for="phoneNumber" class="form-label">Nomor Telepon</label>
+                        <label for="phoneNumber" class="form-label">Phone number</label>
                         <input type="text" class="form-control" id="phoneNumber" placeholder="Masukkan nomor telepon">
                     </div>
                     <div class="mb-3">
-                        <label for="address" class="form-label">Alamat Lengkap</label>
+                        <label for="address" class="form-label">Address</label>
                         <textarea class="form-control" id="address" rows="3" required></textarea>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                <button type="button" class="btn btn-primary" id="submitPayment">Kirim Pembayaran</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Closed</button>
+                <button type="button" class="btn btn-primary" id="submitPayment">Payment Confirmation</button>
             </div>
         </div>
     </div>
